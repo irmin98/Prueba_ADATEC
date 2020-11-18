@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main5Activity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/totalMtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:padding="10dp"
+                android:text="Total de maquinas: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/inactivastxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:padding="10dp"
+                android:text="Total de maquinas inactivas: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activastxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:padding="10dp"
+                android:text="Total de maquinas activas: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tiempoInactivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:padding="10dp"
+                android:text="Tiempo total inactivo: "
+                android:textSize="20sp" />
+
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChart"
+                android:layout_width="match_parent"
+                android:layout_height="336dp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart2"
+                android:layout_width="match_parent"
+                android:layout_height="336dp" />
+
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart3"
+                android:layout_width="match_parent"
+                android:layout_height="336dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
